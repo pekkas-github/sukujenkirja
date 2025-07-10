@@ -49,6 +49,12 @@
       const usrName = document.getElementById('user-name')
       
       btnOk.onclick = function() {
+
+        if (!usrName.value) {
+          alert('Kirjoita nimesi')
+          return
+        }
+        
         const username = usrName.value.replaceAll(' ', '_')
         
         window.localStorage.setItem('username', username)
