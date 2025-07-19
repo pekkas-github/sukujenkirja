@@ -37,17 +37,12 @@
         
       function openApplicationFrame (username, language) {
 
-        // const content = `
-        //     <iframe src="https://script.google.com/macros/s/AKfycbxj09gScl21GDwUHSd68oszqOBQBi5QN3yxaMtjf_sjaTSys_h20DZD77YDUhRCjZA/exec?usertype=guest&username=${username}&language=${language}">
-        //     scrolling="auto">
-        //     </iframe>`
-
         const content = `
           <div class="language" style="position:fixed; text-align:left; padding-left: 1em;">
             <span id="fin"> 🇫🇮 </span> <span id="eng"> 🇬🇧 </span>
           </div>
 
-          <iframe src="https://script.google.com/macros/s/AKfycbw5W0cnemIIpgF36AHsNTDsKGfwepUCVRspCBngTA4bnxiOr2YHIz3ca_sbIZNgYx8n/exec?usertype=beta&username=${username}&language=${language}">
+          <iframe src="https://script.google.com/macros/s/AKfycbxj09gScl21GDwUHSd68oszqOBQBi5QN3yxaMtjf_sjaTSys_h20DZD77YDUhRCjZA/exec?usertype=guest&username=${username}&language=${language}">
           scrolling="auto">
           </iframe>`
 
